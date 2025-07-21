@@ -1,7 +1,7 @@
 import { Pressable, StyleSheet, Text, TextInput } from "react-native";
 import Animated, { FadeIn } from "react-native-reanimated";
 
-export default function Login() {
+export default function Register() {
 
     return (
         <Animated.View style={styles.animatedContainer} entering={FadeIn}>
@@ -15,11 +15,16 @@ export default function Login() {
                 placeholder="Password"
                 placeholderTextColor="#aaa" 
             />
+            <TextInput
+                style={styles.inputs}
+                placeholder="Confirm Password"
+                placeholderTextColor="#aaa" 
+            />
             <Pressable style={styles.button}>
-                <Text style={styles.buttonText}>Login</Text>
+                <Text style={styles.buttonText}>Register</Text>
             </Pressable>
             <Pressable style={styles.linkButton}>
-                <Text style={styles.buttonText}>Sign Up</Text>
+                <Text style={styles.buttonText}>Sign In</Text>
             </Pressable>
         </Animated.View>
     );
